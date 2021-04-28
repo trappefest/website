@@ -1,0 +1,21 @@
+body {
+  padding: 3rem;
+}
+
+
+:root {
+  --hero-padding-y: 6rem;
+}
+
+.hero {
+  padding-top: var(--hero-padding-y);
+  padding-bottom: var(--hero-padding-y);
+}
+
+.hero .container {
+  max-width: 60rem;
+}
+
+.dark {
+  color: #000;
+}
