@@ -19,3 +19,28 @@ body {
 .dark {
   color: #000;
 }
+
+.pale{
+  opacity: 0.1;
+}
+
+.white{
+  color: white;
+}
+
+.red {
+  color: #FF4400;
+}
+
+.movie{
+  width: 300px;
+}
+
+.map{
+  width: 500px;
+}
+
+.carousel-item input {
+  max-width: 300px;
+  display: inline;
+}
