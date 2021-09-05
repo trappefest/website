@@ -1,0 +1,46 @@
+body {
+  padding: 3rem;
+}
+
+
+:root {
+  --hero-padding-y: 6rem;
+}
+
+.hero {
+  padding-top: var(--hero-padding-y);
+  padding-bottom: var(--hero-padding-y);
+}
+
+.hero .container {
+  max-width: 60rem;
+}
+
+.dark {
+  color: #000;
+}
+
+.pale{
+  opacity: 0.1;
+}
+
+.white{
+  color: white;
+}
+
+.red {
+  color: #FF4400;
+}
+
+.movie{
+  width: 300px;
+}
+
+.map{
+  width: 500px;
+}
+
+.carousel-item input {
+  max-width: 300px;
+  display: inline;
+}
