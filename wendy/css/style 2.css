@@ -12,14 +12,14 @@ body {
 .hero {
   padding-top: 6rem;
   padding-bottom: 10rem;
+  z-index: 10;
   position: relative;
 }
 
-.container-fluid,
-.container {
-  position: relative;
-  z-index: 10;
+.hero .container {
+  max-width: 60rem;
 }
+
 
 
 .dark {
@@ -53,7 +53,6 @@ body {
 
 
 /* Custom default button */
-
 .btn-primary {
   border: none;
   padding: 24px;
@@ -78,18 +77,16 @@ body {
 }
 
 
-
 /* Background */
-
-.background {
-  position: absolute;
+.background{
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
 }
 
-.dunes {
+.dunes{
   position: absolute;
   width: 2000px;
   height: 360px;
@@ -98,48 +95,59 @@ body {
   filter: drop-shadow(0px 4px 75px rgba(227, 29, 113, 0.5));
 }
 
-.dunes-intro {
+.dunes-intro{
   bottom: 0;
 }
 
-.stars {
+.stars{
   position: absolute;
   width: 2000px;
   height: 360px;
   left: calc(50% - 2000px/2);
   top: 0px;
-  opacity: 0.75;
+  opacity: 0.5;
   filter: blur(1px) drop-shadow(0px 0px 4px #FFFFFF);
 }
 
-.f-stars {
+.f-stars{
   position: absolute;
   width: 2000px;
   height: 600px;
   left: calc(50% - 2000px/2);
   top: 0px;
-  opacity: 0.9;
+  opacity: 0.8;
   filter: blur(1px);
 }
 
-.moon {
+.moon{
   position: absolute;
   width: 224px;
   height: 224px;
   border-radius: 100%;
-  left: calc(50% - 224px/2 + 380px);
+  left: calc(50% - 224px/2 + 330px);
   bottom: 234px;
   background: #FFFDF1;
   box-shadow: 0px 0px 94px #FFFFFF;
   filter: blur(2px);
 }
 
+@media (min-width: 2000px) {
+  .dunes,
+  .stars,
+  .f-stars {
+    min-width: 100%;
+    height: auto;
+    left: 0;
+  }
+  .moon {
+    bottom: 20%;
+  }
+}
 
 
 /* Intro page */
-
-.intro {
-  z-index: 20;
+.intro{
+  z-index: 100;
   padding: 4rem 2rem 4rem;
 }
 
@@ -156,9 +164,7 @@ body {
 }
 
 
-
 /* Template */
-
 .year h1 {
  font-size: 2.5rem;
  text-transform: uppercase;
@@ -172,6 +178,7 @@ body {
 }
 
 .year {
+  margin-bottom: 4rem;
   background: url(../img/losange.svg) no-repeat top center;
 }
 
@@ -182,41 +189,8 @@ h2 {
   margin-bottom: 2rem;
 }
 
-p {
-  line-height: 1.75em;
-}
-
-.container img {
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-}
-
-.form-answer input {
-  border: none;
-  background: rgba(0,0,0,0.3) ;
-  color: #FFFFFF;
-}
-
-
-
-
 
 /* Responsiveness */
-
-@media (min-width: 2000px) {
-  .dunes,
-  .stars,
-  .f-stars {
-    min-width: 100%;
-    height: auto;
-    left: 0;
-  }
-  .moon {
-    bottom: 20%;
-  }
-}
-
 @media (max-width: 767.98px) { 
   .stars,
   .f-stars {
@@ -242,5 +216,3 @@ p {
     font-size: 2em;
   }
  }
-
- 

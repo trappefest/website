@@ -9,27 +9,30 @@
   <link rel="stylesheet" href="css/style.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+    body {background: linear-gradient(180deg, #000341 0%, #7F6BCE 63.02%, #E21C70 81.25%) no-repeat}
   </style>
 
   <title>The Qwest</title>
 </head>
 
 <body>
-  <section class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
-      <div class="title text-center"> 
-        <h1>Welcome to</h1>
-        <div class="title">
-          <img src="img/title.svg" loading="lazy">
+  <section class="container-fluid">
+    <div class="row align-items-center min-vh-100">
+      <div class="col intro text-center"> 
+          <h1>Welcome to</h1>
+          <div>
+            <img class="title" src="img/title.svg" loading="lazy">
+          </div>
+          <a href='year1.html'><button type="button" class="btn btn-primary">Start</button></a>
         </div>
-        <a href='year1.html'><button type="button" class="btn btn-primary">Start</button></a>
       </div>
-  </section>
 
-  <section class="background overflow-hidden">
-    <div class="moon"></div>
-    <img class="f-stars" src="img/falling-stars.svg" loading="lazy">
-    <img class="stars" src="img/stars.svg" loading="lazy">
-    <img class="dunes" src="img/dunes.svg" loading="lazy">
+      <div class="background overflow-hidden">
+        <div class="moon"></div>
+        <img class="f-stars" src="img/falling-stars.svg" loading="lazy">
+        <img class="stars" src="img/stars.svg" loading="lazy">
+        <img class="dunes dunes-intro" src="img/dunes.svg" loading="lazy">
+      </div>
   </section>
 
   <script src="js/bootstrap.bundle.min.js"></script>
