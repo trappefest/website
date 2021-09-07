@@ -51,6 +51,17 @@ body {
   display: inline;
 }
 
+a,
+a:visited {
+  color: #FCB4BD;
+  letter-spacing: 0.075em;
+}
+a:hover,
+a:focus {
+  color: #9784E9;
+  text-decoration: none;
+}
+
 
 /* Custom default button */
 
