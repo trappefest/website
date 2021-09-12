@@ -8,7 +8,6 @@ body {
   min-height: 100vh;
 }
 
-
 .hero {
   padding-top: 6rem;
   padding-bottom: 10rem;
@@ -21,16 +20,23 @@ body {
   z-index: 10;
 }
 
+.portrait {
+  display: block;
+  max-width:800px;
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .dark {
   color: #000;
 }
 
-.pale{
+.pale {
   opacity: 0.1;
 }
 
-.white{
+.white {
   color: white;
 }
 
@@ -38,11 +44,11 @@ body {
   color: #FF4400;
 }
 
-.movie{
+.movie {
   width: 300px;
 }
 
-.map{
+.map {
   width: 500px;
 }
 
@@ -56,15 +62,14 @@ a:visited {
   color: #FCB4BD;
   letter-spacing: 0.075em;
 }
+
 a:hover,
 a:focus {
   color: #9784E9;
   text-decoration: none;
 }
 
-
 /* Custom default button */
-
 .btn-primary {
   border: none;
   padding: 24px;
@@ -88,10 +93,7 @@ a:focus {
   color: #FFFFFF;
 }
 
-
-
 /* Background */
-
 .background {
   position: absolute;
   top: 0;
@@ -145,10 +147,7 @@ a:focus {
   filter: blur(2px);
 }
 
-
-
 /* Intro page */
-
 .intro {
   z-index: 20;
   padding: 4rem 2rem 4rem;
@@ -166,14 +165,11 @@ a:focus {
   line-height: 110%;
 }
 
-
-
 /* Template */
-
 .year h1 {
- font-size: 2.5rem;
- text-transform: uppercase;
- letter-spacing: 0.1em;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .year .num {
@@ -205,17 +201,13 @@ p {
 
 .form-answer input {
   border: none;
-  background: rgba(0,0,0,0.3) ;
+  background: rgba(0, 0, 0, 0.3);
   color: #FFFFFF;
 }
 
-
-
-
-
 /* Responsiveness */
-
 @media (min-width: 2000px) {
+
   .dunes,
   .stars,
   .f-stars {
@@ -223,35 +215,37 @@ p {
     height: auto;
     left: 0;
   }
+
   .moon {
     bottom: 20%;
   }
 }
 
-@media (max-width: 767.98px) { 
+@media (max-width: 767.98px) {
+
   .stars,
   .f-stars {
     width: 1000px;
     height: auto;
     left: calc(50% - 1000px/2);
   }
+
   .dunes {
     width: 800px;
     height: auto;
     left: calc(50% - 800px/2);
     bottom: 0;
   }
+
   .moon {
     left: auto;
     right: -100px;
     bottom: 0;
   }
- }
+}
 
- @media (max-width: 575.98px) { 
+@media (max-width: 575.98px) {
   .intro h1 {
     font-size: 2em;
   }
- }
-
- 
+}
