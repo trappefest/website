@@ -1,6 +1,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
+  font-size: 1.4rem;
   font-weight: 500;
   color: #FFFFFF;
   background: #45145B;
@@ -183,7 +184,14 @@ a:focus {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.3rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 2.1rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   margin-bottom: 2rem;
