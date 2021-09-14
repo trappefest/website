@@ -187,6 +187,7 @@ a:focus {
 
 .year {
   background: url(../img/losange.svg) no-repeat top center;
+  min-height: 168px;
 }
 
 h2 {
