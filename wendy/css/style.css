@@ -1,7 +1,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 500;
   color: #FFFFFF;
   background: #45145B;
@@ -179,6 +179,12 @@ a:focus {
   letter-spacing: 0;
 }
 
+.year .special {
+  font-size: 12vw;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
 .year {
   background: url(../img/losange.svg) no-repeat top center;
 }
@@ -205,6 +211,11 @@ p {
   max-width: 100%;
   width: 100%;
   height: auto;
+}
+
+video,
+iframe {
+  max-width: 100%;
 }
 
 .form-answer input {
