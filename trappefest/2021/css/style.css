@@ -5,7 +5,7 @@ body {
   font-weight: 500;
   color: #FFFFFF;
   background: #45145B;
-  background: linear-gradient(180deg, #000341 0%, #C5348C 100%) no-repeat;
+  //background: linear-gradient(180deg, #000341 0%, #C5348C 100%) no-repeat;
   min-height: 100vh;
 }
 
