@@ -9,7 +9,10 @@
   <link rel="stylesheet" href="css/style.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
-    body {background: linear-gradient(180deg, #07070b 0%, #07070b 75.7%,#8364ce 77.7%, #07070b 96%, #07070b 100%) no-repeat}
+
+    body {
+      background: linear-gradient(180deg, #07070b 0%, #07070b 50.8%, #8364ce 52.8%, #07070b 96%, #07070b 100%) no-repeat
+    }
   </style>
 
   <title>Trappefest 2021</title>
@@ -19,15 +22,32 @@
   <section class="container-fluid">
     <div class="row align-items-center min-vh-100">
       <div class="col intro text-center">
-          <div>
-            <img src="./img/tf21_wip.jpg" />
-          </div>
+        <div>
+          <img src="./img/tf21_wip.jpg" </div>
+
+          <br /><br /><br /><br />
+          <p>
+            Trappefest is happening again for New Years Eve 2021, at a beautiful location in the Grampians.<br />
+            You are invited to come join the fun! Anytime from the 29th.<br />
+            To cover hiring cost for the gear (audio, generator, etc..), we ask a participation of $xx per person.<br />
+            Don't worry it's only used for the things we will bring to the festival!<br /><br />
+            Let us know if you are interested in joining<br /><br />
+            Please enter one person at a time <br />and let us know if you want a t-shirt ($xx) <br />and if you'd like a slot for a playlist/dj set <br />or for an activity <br />(for example we have people doing yoga, philosophy classes, etc...
+            <br />It can be absolutely anything! ).
+          </p>
+          Name:<br>
+          <input id="interest-name" type="text" name="name"><br>
+          <label><input type="checkbox" id="tshirt" name="tshirt" />I want a t-shirt please</label><br />
+          <label><input type="checkbox" id="dj" name="dj" />I want a dj/ activity slot please</label><br />
+          <button class="btn btn-primary" onclick="sendMail(); return false">I want to come!</button>
+
         </div>
       </div>
 
   </section>
 
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/email.js"></script>
 </body>
 
 </html>
