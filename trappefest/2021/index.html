@@ -8,6 +8,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script src="js/jquerymobile.js"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
   </style>
@@ -177,7 +178,7 @@
               <img class="d-block w-100" src="img/artists/wendyloo-portrait.png" alt="Wendyloo">
             </div>
           </div>
-        
+
         </div>
       </div>
     </div>
@@ -213,7 +214,14 @@
   </div>
 
   <script>
-    $('.carousel').bcSwipe({ threshold: 50 });
+    $(document).ready(function() {
+      $("#carouselExampleIndicators").swiperight(function() {
+        $(this).carousel('prev');
+      });
+      $("#carouselExampleIndicators").swipeleft(function() {
+        $(this).carousel('next');
+      });
+    });
   </script>
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
