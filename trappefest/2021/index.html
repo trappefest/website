@@ -12,11 +12,46 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
   </style>
 
+  <style>
+    .carousel-indicators {
+      top: 0px;
+
+      right: unset !important;
+      left: unset !important;
+      padding-left: unset !important;
+      margin-right: unset !important;
+      margin-left: unset !important;
+      position: inherit;
+      z-index: inherit;
+      display: inherit;
+    }
+
+    .carousel-indicators [data-bs-target] {
+
+      box-sizing: inherit;
+      flex: none;
+
+      width: 100px;
+      height: 100px;
+
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 5px solid transparent;
+      opacity: .5;
+      transition: opacity .6s ease;
+      border-radius: 100%; // /* add border-radius */
+    }
+
+    .carousel-indicators .active {
+      opacity: 1;
+      border: 5px solid #e54ee7;
+    }
+  </style>
   <title>TrappeFest 2021</title>
 </head>
 
 <body>
-  
+
   <section class="container-fluid align-items-center intro">
     <h2>Edition 2</h2><br>
 
@@ -27,8 +62,8 @@
     <p>
       Trappefest is happening again for New Years Eve 2021, at a beautiful location in the Grampians.<br />
       You are invited to come join the fun! Anytime from the 29th.<br />
-      In order to help cover the rental of the gear ( speakers, generator, petrol, lights, wood, etc... ) <br/>we are asking everyone to participate an entry fee. <br/>
-      The cost will be calculated once we have the final numbers and will be the total rental divided by the number of participants.<br/> We're expecting this to be below $50<br/><br/>
+      In order to help cover the rental of the gear ( speakers, generator, petrol, lights, wood, etc... ) <br />we are asking everyone to participate an entry fee. <br />
+      The cost will be calculated once we have the final numbers and will be the total rental divided by the number of participants.<br /> We're expecting this to be below $50<br /><br />
       Let us know if you are interested in joining:
     </p><br>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLScgFt_mMj1fffwv4cg813dwJjzXBKT6XJMok8pGYWIcW8sZ4g/viewform?usp=sf_link" target="_blank">
@@ -44,21 +79,113 @@
     </div>
     <div class="row justify-content-center no-gutters>">
       <div class="col-12 col-lg-9">
-        <h4>Cherry Rourou</h4>
-        <h4>Gaiane la gitane</h4>
-        <h4>The Spin Doctor</h4>
-        <h4>Dj Mouthpiece</h4>
-        <h4>Wendyloo</h4>
-        <h4>AJ DJ</h4>
-        <h4>Skull Jams</h4>
-        <h4>Queen of the Desert</h4>
-        <h4>Maximousse Couscous</h4>
-        <h4>Alan Trappe</h4>
-        <h4>Cosmocat</h4>
-        <h4>DJ Music</h4>
-        <h4>DJ Chalimero</h4>
-        <br><br>
-        <h4>& more...</h4>
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators d-flex flex-wrap">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+              <img class="d-block w-100" src="img/artists/ajdj-thumbnail.png">
+            </button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 1">
+              <img class="d-block w-100" src="img/artists/alantrappe-thumbnail.png">
+            </button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 2">
+              <img class="d-block w-100" src="img/artists/cherryrourou-thumbnail.png">
+            </button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3">
+              <img class="d-block w-100" src="img/artists/cosmocat-thumbnail.png">
+            </button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 4">
+              <img class="d-block w-100" src="img/artists/djchalimero-thumbnail.png">
+            </button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 5">
+              <img class="d-block w-100" src="img/artists/djmouthpiece-thumbnail.png">
+            </button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 6">
+              <img class="d-block w-100" src="img/artists/djmusic-thumbnail.png">
+            </button>
+            <br />
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 7">
+              <img class="d-block w-100" src="img/artists/gaianelagitane-thumbnail.png">
+            </button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 8">
+              <img class="d-block w-100" src="img/artists/imwithher-thumbnail.png">
+            </button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 9">
+              <img class="d-block w-100" src="img/artists/jeanmichelmachoire-thumbnail.png">
+            </button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 10">
+              <img class="d-block w-100" src="img/artists/maximousse51-thumbnail.png">
+            </button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" aria-label="Slide 11">
+              <img class="d-block w-100" src="img/artists/queenofthedesert-thumbnail.png">
+            </button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12" aria-label="Slide 12">
+              <img class="d-block w-100" src="img/artists/skulljam-thumbnail.png">
+            </button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13" aria-label="Slide 13">
+              <img class="d-block w-100" src="img/artists/thespindoctor-thumbnail.png">
+            </button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="14" aria-label="Slide 14">
+              <img class="d-block w-100" src="img/artists/wendyloo-thumbnail.png">
+            </button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="img/artists/ajdj-portrait.png" alt="AJ DJ">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/artists/alantrappe-portrait.png" alt="Alan Trappe">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/artists/cherryrourou-portrait.png" alt="Cherry Rourou">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/artists/cosmocat-portrait.png" alt="CosmoCat">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/artists/djchalimero-portrait.png" alt="DJ Chalimero">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/artists/djmouthpiece-portrait.png" alt="DJ Mouthpiece">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/artists/djmusic-portrait.png" alt="DJ Music">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/artists/gaianelagitane-portrait.png" alt="Gaiane La Gitane">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/artists/imwithher-portrait.png" alt="I'm With Her">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/artists/jeanmichelmachoire-portrait.png" alt="Jean Michel Machoire">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/artists/maximousse51-portrait.png" alt="Maximousse 51">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/artists/queenofthedesert-portrait.png" alt="Queen Of The Desert">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/artists/skulljam-portrait.png" alt="Skulljam">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/artists/thespindoctor-portrait.png" alt="The Spin Doctor">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/artists/wendyloo-portrait.png" alt="Wendyloo">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
     </div>
   </section>
@@ -73,10 +200,10 @@
       <div class="col-12 col-md moora"></div>
       <div class="col-12 col-md mt-5 mt-md-0">
         <p>
-          Our primary location is a gorgeous spot, set on the edge of a swimmable reservoir.<br/>
-          The event is a wild camping set up (no facilities nor toilets... Good ol' shovel!)<br/>
-          It isn't a bookable location so we won't know if we can secure the spot until a few days before the event, when some of us get there as early as possible after Christmas.<br/>
-          If we can't get that spot, we have a plan B in the Grampians. <br/>The final location will be shared as soon as we know, a few days before the event.<br/>
+          Our primary location is a gorgeous spot, set on the edge of a swimmable reservoir.<br />
+          The event is a wild camping set up (no facilities nor toilets... Good ol' shovel!)<br />
+          It isn't a bookable location so we won't know if we can secure the spot until a few days before the event, when some of us get there as early as possible after Christmas.<br />
+          If we can't get that spot, we have a plan B in the Grampians. <br />The final location will be shared as soon as we know, a few days before the event.<br />
           But let's plan for the best: Bring your sunnies, sun screen and bather, pitch your tent amongst the gum trees and bring your best festival outfit for a day and night to remember!
           <br><br>
           Stay tuned for the exact location!
@@ -93,6 +220,10 @@
   </div>
 
 
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="/docs/4.0/assets/js/vendor/jquery-slim.min.js"><\/script>')
+  </script>
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
