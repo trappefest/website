@@ -46,6 +46,13 @@ h4 {
   margin: 0 1em 0.5em;
 }
 
+h5 {
+  font-size: 0.875rem;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: #FF00B8;
+}
+
 p {
   display: inline-block;
   line-height: 1.625em;
@@ -171,6 +178,80 @@ a:focus {
 }
 
 
+
+.accordion-item {
+  background-color: #000000;
+  border-color: #333333;
+  text-align: left;
+}
+
+.accordion-button.collapsed {
+  color: #ffffff !important;
+}
+
+.accordion-button {
+  background-color: #000000 !important;
+  color: #FF00B8 !important;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 0, 184, 0.6);
+}
+
+.accordion-button.collapsed:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%239C9C9C'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FF00B8'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+
+
+.carousel-indicators {
+  position: inherit;
+  display: inherit;
+  margin-right: unset !important;
+  margin-left: unset !important;
+}
+
+.carousel-indicators [data-bs-target] {
+  box-sizing: inherit;
+  /*flex: none;*/
+  background: none;
+  width: 48px;
+  height: 64px;
+  opacity: .5;
+  transition: opacity .6s ease;
+  line-height: 1em;
+}
+.carousel-indicators [data-bs-target] img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: none;
+  border: 2px solid transparent;
+  outline: 2px solid transparent;
+  border-radius: 100%;  /* add border-radius */
+  margin-bottom: 8px;
+}
+
+.carousel-indicators [data-bs-target] h5 {
+  display: none;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+}
+.carousel-indicators .active img {
+  border: 2px solid #000000;
+  outline: 2px solid #01E8FB;
+  filter: drop-shadow(0px 0px 24px #01E8FB);
+}
+
+
+
+
 /* Responsiveness */
 @media (min-width: 576px) {
   .intro {
@@ -209,6 +290,11 @@ a:focus {
   
   .galaxy-left {
     background-position-x: 240%;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 56px;
+    height: 80px;
   }
 }
 
@@ -256,6 +342,21 @@ a:focus {
   
   .galaxy-left {
     left: -50%;
+  }
+
+  .carousel-item p {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 80px;
+    height: 140px;
+  }
+  
+  .carousel-indicators [data-bs-target] h5 {
+    display: inline;
   }
 }
 
