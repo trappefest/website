@@ -277,6 +277,10 @@ a:focus {
   border-radius: 20px;
 }
 
+#music .player {
+  width: 100%;
+  margin: 12px 0;
+}
 
 
 /* Responsiveness */
