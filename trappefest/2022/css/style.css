@@ -56,6 +56,10 @@ p {
   background-color: black;
 }
 
+.lockup {
+  vertical-align: middle;
+}
+
 .intro {
   background-color: #D0A570;
   padding: 4rem 1.5rem;
