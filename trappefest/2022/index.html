@@ -8,43 +8,334 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script src="js/jquery.js"></script>
+  <script src="js/jquerymobile.js"></script>
+  <script src="js/galleria/galleria.min.js"></script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&display=swap');
+
+    @font-face {
+        font-family: 'trappefont';
+        src: url('font/trappefont.woff2') format('woff2'),
+            url('font/trappefont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    };
   </style>
+
   <title>TrappeFest III</title>
 </head>
 
 <body>
-  <section class="container-fluid align-items-center">
+  <section class="container-fluid align-items-center intro">
+    <img class="logo" src="img/logo.svg">
+    <div>
+      <h3 class="d-block d-sm-inline-block">Corringle</h3>
+      <h3 class="d-none d-sm-inline-block">&nbsp;&nbsp;-&nbsp;&nbsp;</h3>
+      <h3 class="d-block d-sm-inline-block">30/31 Dec 2022</h3>
+    </div>
 
-    <div class="row justify-content-center align-items-center no-gutters>">
+    <p>
+      Stronger, longer, louder... That would sum up TrappeFest III.<br />
+      As always, an incredible team effort brought the best NYE party to life: amazing sets, mind-blowing dance moves, hilarious banters, awesome activities, real toilets, shark-infested ocean, coupled with great weather (a real TrappeFest miracle!) and dubious host and camp neighbours, but most of all, an infinite amount of love!<br />
+      Another edition, another success! Thanks again to everyone who participated and joined.<br />
+      💛
+    </p>
+  </section>
+
+  <div class="separator"></div>
+
+  <section class="container align-items-center music" id="music">
+    <div class="row no-gutters align-items-center">
+      <h2>Re-listen to the mixes</h2>
+    </div>
+
+    <div class="row no-gutters align-items-center">
+      <div class="row no-gutters align-items-center">
+      <h3>Friday 30<sup>th</sup></h3>
+    </div>
+   
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>4.45pm</h5><h4>Collab Chaiane</h4></div>
+        <div class="col-12 col-md py-3">
+          <iframe src="https://open.spotify.com/embed/playlist/0yTfSDKnJ26dp7GfD3RqWV?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
       
-      <div class="col-12 col-lg-6 left min-vh-100">
-          <img class="logo" src="img/logo.svg">
-          <h2>Coming soon</h2>
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>5.15pm</h5><h4>Alice 'n Wendyland</h4></div>
+        <div class="col-12 col-md py-3">
+          <audio controls class="player" src="https://docs.google.com/uc?export=download&id=1peG4iZZ4mHINlxCR2J9ercawl3Yv3rhu"></audio>
+        </div>
       </div>
 
-      <div class="col-12 col-lg-6 intro">
-        <p>
-          TrappeFest is coming back for a third act on New Years Eve 2022.<br />
-          And you're invited to come join the fun!<br />
-          Location TBC (most likely in the Grampians).
-          <br /><br />
-          As per previous years, we'll be asking everyone to participate to an entry fee in order to help cover all the costs (rental of speakers, generator, petrol, lights, wood, etc... ). This will be calculated once we have the final numbers (we're expecting this to be below $50).
-          <br /><br />
-          Let us know if you are interested in joining:
-        </p><br /><br />
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeA9JSEefOdX3Dh40ecf34Wsm5-mrtoi0DX3iHUl93Y-aaRPw/viewform?usp=sf_link" target="_blank">
-          <button class="btn btn-primary">Register your interest</button>
-        </a>
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>5.45pm</h5><h4>Australiana</h4></div>
+        <div class="col-12 col-md py-3">
+          <iframe src="https://open.spotify.com/embed/playlist/4DSQaTZJ2J3xraR8QwTbBL?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>6.15pm</h5><h4>DJ Chaton</h4></div>
+        <div class="col-12 col-md py-3">
+          <iframe src="https://open.spotify.com/embed/playlist/4EuO0Nbs1Bn3a2STuumpuM?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>6.45pm</h5><h4>Maximousse 51</h4></div>
+        <div class="col-12 col-md py-3">
+          <iframe src="https://open.spotify.com/embed/playlist/238fhsaM1x2DQmfLwpBpvt?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>7.45pm</h5><h4>CosmoCat</h4></div>
+        <div class="col-12 col-md py-3">
+          <audio controls class="player" src="https://docs.google.com/uc?export=download&id=1hd9B6Sdtrgam2ZZ7b4qjAU_269-aoaqo"></audio>
+        </div>
+      </div>
+
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>10.15pm</h5><h4>CosmoCat</h4></div>
+        <div class="col-12 col-md py-3">
+          <audio controls class="player" src="https://docs.google.com/uc?export=download&id=1rNmXdi3D3OMbP-5AOoGG109jbNrad1zC"></audio>
+        </div>
+      </div>
+
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>11.45pm</h5><h4>Alan Trappe</h4></div>
+        <div class="col-12 col-md py-3">
+          <iframe src="https://open.spotify.com/embed/playlist/4JufOFqQ7qv0t7hM3g48dL?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>1.15am</h5><h4>DJ Nosebleed</h4></div>
+        <div class="col-12 col-md py-3">
+          <audio controls class="player" src="https://docs.google.com/uc?export=download&id=1nosQKUj8KD25XKoDhEbnJoQOfehG8Ukn"></audio>
+        </div>
+      </div>
+
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>2.45am</h5><h4>Gusticles</h4></div>
+        <div class="col-12 col-md py-3">
+          <audio controls class="player" src="https://docs.google.com/uc?export=download&id=1cSzigjLaFtd-_Q8Qr2EB-evNV43TALz-"></audio>
+        </div>
       </div>
 
     </div>
 
-    
+    <div class="row no-gutters align-items-center">
+      <h3>Saturday 31<sup>st</sup></h3>
 
-    
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>12.00pm</h5><h4>Cherry Rourou</h4></div>
+        <div class="col-12 col-md py-3">
+          <iframe src="https://open.spotify.com/embed/playlist/0sDcsHb33lkea7Pupx5fbT?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>3.30pm</h5><h4>AJ DJ</h4></div>
+        <div class="col-12 col-md py-3">
+          <iframe src="https://open.spotify.com/embed/playlist/6OanycxJRrD9KXWBxVLmvw?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>4.00pm</h5><h4>Dj Mouthpiece</h4></div>
+        <div class="col-12 col-md py-3">
+          <audio controls class="player" src="https://docs.google.com/uc?export=download&id=1XM82eLtpawkvAzmrWr58OoTAwgyCbGLP"></audio>
+        </div>
+      </div>
+
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>4.30pm</h5><h4>The Spin Doctor</h4></div>
+        <div class="col-12 col-md py-3">
+          <audio controls class="player" src="https://docs.google.com/uc?export=download&id=1_4GnnyzGKSfTe02LCwYV5K1UUHPot6KS"></audio>
+        </div>
+      </div>
+
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>5.30pm</h5><h4>Queen of the Desert</h4></div>
+        <div class="col-12 col-md py-3">
+          <audio controls class="player" src="https://docs.google.com/uc?export=download&id=1_UtxkR-qUrVt_LiBMx5qaHvWfTVX-107"></audio>
+        </div>
+      </div>
+
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>6.30pm</h5><h4>Madame trappe</h4></div>
+        <div class="col-12 col-md py-3">
+          <audio controls class="player" src="https://docs.google.com/uc?export=download&id=1omN2xIilBp-6hjOPFhN0CYEqtNSHhKUT"></audio>
+        </div>
+      </div>
+
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>6.45pm</h5><h4>Alice 'n Wendyland</h4></div>
+        <div class="col-12 col-md py-3">
+          <audio controls class="player" src="https://docs.google.com/uc?export=download&id=1vulY9-jPSJGHnOXwQPmqZNT1vU29pfRJ"></audio>
+        </div>
+      </div>
+
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>7.30pm</h5><h4>Skull Jams</h4></div>
+        <div class="col-12 col-md py-3">
+          <audio controls class="player" src="https://docs.google.com/uc?export=download&id=1PUnGhngn_egd1irmEz_EiHerI6xaM_9K"></audio>
+        </div>
+      </div>
+
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>8.15pm</h5><h4>Mikiluv</h4></div>
+        <div class="col-12 col-md py-3">
+          <audio controls class="player" src="https://docs.google.com/uc?export=download&id=1bjtRqd0MIMghFnA0g51tOQpbKIW49vO4"></audio>
+        </div>
+      </div>
+
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>9.15pm</h5><h4>Maximousse 51</h4></div>
+        <div class="col-12 col-md py-3">
+          <audio controls class="player" src="https://docs.google.com/uc?export=download&id=1wI1oeSVCBbMyJPxglS9Fbu0oJb2ojC2n"></audio>
+        </div>
+      </div>
+
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>10.00pm</h5><h4>DJ Chaton</h4></div>
+        <div class="col-12 col-md py-3">
+          <audio controls class="player" src="https://docs.google.com/uc?export=download&id=1tf-M4V3T5bbifZJfKcwxaAEgpCfT5N-R"></audio>
+        </div>
+      </div>
+
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>10.30pm</h5><h4>Burgermoji</h4></div>
+        <div class="col-12 col-md py-3">
+          <audio controls class="player" src="https://docs.google.com/uc?export=download&id=1NnMYLedPD2PdRNCKHPX9D9qfr8cyya95"></audio>
+        </div>
+      </div>
+
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>11.30pm</h5><h4>DJ Music</h4></div>
+        <div class="col-12 col-md py-3">
+          <audio controls class="player" src="https://docs.google.com/uc?export=download&id=1l9DN9b5B-ANWje9SSrE9VcrzNJeMobVb"></audio>
+        </div>
+      </div>
+
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>12.30am</h5><h4>CosmoCat</h4></div>
+        <div class="col-12 col-md py-3">
+          <audio controls class="player" src="https://docs.google.com/uc?export=download&id=15oOx-QTfJUeJrOSTlBOX6sLhni5HF454"></audio>
+        </div>
+      </div>
+
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>1.30am</h5><h4>Zebras & Buffaloes</h4></div>
+        <div class="col-12 col-md py-3">
+          <audio controls class="player" src="https://docs.google.com/uc?export=download&id=1JaPkMYmajBtWtuWLK8NFSYNGZbT6mSE1"></audio>
+        </div>
+      </div>
+
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>2.30am</h5><h4>CosmoCat</h4></div>
+        <div class="col-12 col-md py-3">
+          <audio controls class="player" src="https://docs.google.com/uc?export=download&id=1_-hy3NCanG5r-6r00U26ZHxTllCbfDDZ"></audio>
+        </div>
+      </div>
+<!--MISSING ARTHUR SET
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>3.30am</h5><h4>Dj Nosebleed</h4></div>
+        <div class="col-12 col-md py-3">
+          <audio controls class="player" src="https://docs.google.com/uc?export=download&id=1ed9jrvkD8t5GjhZbvujNImSgfxzKmgM4"></audio>
+        </div>
+      </div>
+-->
+      <div class="row no-gutter align-items-center mb-4">
+        <div class="col"><h5>4.30am</h5><h4>Alan Trappe</h4></div>
+        <div class="col-12 col-md py-3">
+          <iframe src="https://open.spotify.com/embed/playlist/1gsh9u87ZCFkhW97Glt2xi?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+
+    </div>
   </section>
+
+  <div class="separator"></div>
+
+  <section class="container align-items-center gallery" id="gallery">
+    <div class="row no-gutters align-items-center">
+      <h2>Gallery</h2>
+    </div>
+    <div class="row justify-content-center no-gutters>">
+      <div class="col-12">
+       
+        <div class="galleria">
+          <a href="img/gallery/picture-1-full.jpg"><img src="img/gallery/picture-1-thmb.jpg"></a>
+          <a href="img/gallery/picture-2-full.jpg"><img src="img/gallery/picture-2-thmb.jpg"></a>
+          <a href="img/gallery/picture-3-full.jpg"><img src="img/gallery/picture-3-thmb.jpg"></a>
+          <a href="img/gallery/picture-4-full.jpg"><img src="img/gallery/picture-4-thmb.jpg"></a>
+          <a href="img/gallery/picture-5-full.jpg"><img src="img/gallery/picture-5-thmb.jpg"></a>
+          <a href="img/gallery/picture-6-full.jpg"><img src="img/gallery/picture-6-thmb.jpg"></a>
+          <a href="img/gallery/picture-7-full.jpg"><img src="img/gallery/picture-7-thmb.jpg"></a>
+          <a href="img/gallery/picture-8-full.jpg"><img src="img/gallery/picture-8-thmb.jpg"></a>
+          <a href="img/gallery/picture-9-full.jpg"><img src="img/gallery/picture-9-thmb.jpg"></a>
+          <a href="img/gallery/picture-10-full.jpg"><img src="img/gallery/picture-10-thmb.jpg"></a>
+          <a href="img/gallery/picture-11-full.gif"><img src="img/gallery/picture-11-thmb.jpg"></a>
+          <a href="img/gallery/picture-12-full.jpg"><img src="img/gallery/picture-12-thmb.jpg"></a>
+          <a href="img/gallery/picture-13-full.jpg"><img src="img/gallery/picture-13-thmb.jpg"></a>
+          <a href="img/gallery/picture-14-full.jpg"><img src="img/gallery/picture-14-thmb.jpg"></a>
+          <a href="img/gallery/picture-15-full.jpg"><img src="img/gallery/picture-15-thmb.jpg"></a>
+          <a href="img/gallery/picture-16-full.jpg"><img src="img/gallery/picture-16-thmb.jpg"></a>
+          <a href="img/gallery/picture-17-full.jpg"><img src="img/gallery/picture-17-thmb.jpg"></a>
+          <a href="img/gallery/picture-18-full.jpg"><img src="img/gallery/picture-18-thmb.jpg"></a>
+          <a href="img/gallery/picture-19-full.jpg"><img src="img/gallery/picture-19-thmb.jpg"></a>
+          <a href="img/gallery/picture-20-full.jpg"><img src="img/gallery/picture-20-thmb.jpg"></a>
+        </div>
+        <br /><br />
+        <div>
+          <a href="https://photos.app.goo.gl/9exLXDe9f6XDRzjMA" target="_blank">
+            <button class="btn btn-primary">More pictures here</button>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="separator"></div>
+
+  <section class="container align-items-center video" id="video">
+    <div class="row no-gutters align-items-center">
+      <h2>Videos</h2>
+    </div>
+    
+    <div class="row justify-content-center no-gutters>">
+      <div class="col-12 col-xl-6">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/b3OM951_P8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+      </div>
+    </div>
+
+  </section>
+
+  <section class="footer"></section>
+
+  <div class="background">
+    <div class="graphic-right"></div>
+    <div class="graphic-left"></div>
+  </div>
+
+
+  <script>
+    (function() {
+      Galleria.loadTheme('js/galleria/galleria.folio.min.js');
+      Galleria.run('.galleria', {
+        _animate: false,
+        _center: true,
+        imageCrop: false,
+        initialTransition: 'fade',
+        transition: 'slide',
+      });
+    }());
+  </script>
   
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
