@@ -1,0 +1,251 @@
+html{
+  min-height:100%;/* make sure it is at least as tall as the viewport */
+  position:relative;
+}
+
+body {
+  font-family: 'Fira Sans Condensed', Arial, sans-serif;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  color: #FFFFFF;
+  background: #000 url('../img/pattern@2x.png');
+  overflow-x: hidden;
+  height:100%; /* force the BODY element to match the height of the HTML element */
+}
+
+
+h2 {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.2em;
+  letter-spacing: 0.2em;
+  margin-right: -0.2em;
+  text-transform: uppercase;
+  color: #D0A570;
+  text-shadow: 0px 4px 32px #000000, 1px 5px 14px #000000;
+  margin-bottom: 1em;
+}
+
+h3 {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2em;
+  letter-spacing: 0.05em;
+  margin-right: -0.05em;
+  text-transform: uppercase;
+  color: #D0A570;
+}
+
+h4 {
+  font-family: 'trappefont', 'Fira Sans Condensed', Arial, sans-serif;
+  font-size: 2rem;
+  line-height: 1em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #D0A570;
+  margin: 0 1em 0.5em;
+  text-shadow: 0px 2px 24px #000000, 1px 1px 4px #000000;
+}
+
+h5 {
+  font-size: 0.875rem;
+  line-height: 0.8em;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+p {
+  display: inline-block;
+  line-height: 1.6em;
+  letter-spacing: 0.1em;
+  margin-right: -0.1em;
+  padding: 0 2em;
+  text-shadow: 0px 2px 24px #000000, 0px 2px 12px #000000;
+}
+
+sup {
+  font-size: 0.55em;
+}
+
+.small {
+  font-size: 0.775rem;
+}
+
+a,
+a:visited {
+  color: #D0A570;
+  letter-spacing: 0.075em;
+}
+
+a:hover,
+a:focus {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* Custom default button */
+.btn-primary {
+  padding: 12px 24px;
+  background: #000;
+  border: 1px solid #D0A570;
+  box-sizing: border-box;
+  border-radius: 100px;
+  font-weight: 700;
+  line-height: 1.4em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #D0A570;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #000;
+  border: 1px solid #000;
+  background: #D0A570;
+  color: #000;
+}
+
+
+/* Template */
+.logo {
+  margin: 80px 0 48px;
+  max-width: 30%;
+}
+
+.intro h3 {
+  margin-bottom: 0;
+}
+
+.intro p {
+  margin: 6em 0 2em;
+  max-width: 980px;
+}
+
+.footer {
+  position: relative;
+  z-index: -20;
+  background: url('../img/bottom-logo@2x.png') no-repeat center top;
+  background-size: contain;
+  width: 100%;
+  height: 145px;
+  margin: 128px 0 64px;
+}
+
+.separator {
+  background: url('../img/separator@2x.png') no-repeat center;
+  background-size: contain;
+  width: 100%;
+  height: 20px;
+  margin-bottom: 50px
+}
+
+.background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 100vw;
+}
+
+.graphic-right {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  width: 100%;
+  height: 420px;
+  background: url('../img/side-graphic-1@2x.png') no-repeat top right;
+  background-size: auto 100%;
+}
+
+.graphic-left {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  width: 100%;
+  height: 420px;
+  background: url('../img/side-graphic-2@2x.png') no-repeat;
+  background-size: auto 100%;
+}
+
+
+.galleria {
+  height: 400px;
+  width: 100%;
+}
+
+.galleria-thumbnails .galleria-image {
+  width: 120px !important;
+  height: auto;
+}
+
+.video iframe {
+  max-width: 100%;
+  height: 240px;
+}
+
+.music .row {
+  margin: 0;
+}
+
+.music h3 {
+  margin: 40px 0 40px;
+  padding: 0;
+  color: #FFFFFF;
+  font-size: 2.25em;
+  letter-spacing: 0.3em;
+}
+
+.music h4,
+.music h5 {
+  margin: 0;
+}
+
+.music h5 {
+  margin-bottom: 8px;
+}
+
+.music iframe {
+  border-radius: 20px;
+}
+
+.music .player {
+  width: 100%;
+  margin: 12px 0;
+}
+
+
+/* Responsiveness */
+@media (min-width: 460px) {
+  .video iframe {
+    height: 275px;
+  }
+}
+
+@media (min-width: 576px) {
+  .galleria-thumbnails .galleria-image {
+    width: 118px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .galleria-thumbnails .galleria-image {
+    width: 160px !important;
+  }
+
+  .video iframe {
+    height: 315px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .galleria-thumbnails .galleria-image {
+    width: 260px !important;
+  }
+}
