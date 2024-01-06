@@ -1,0 +1,100 @@
+body {
+  font-family: 'Playfair Display', Times, serif;
+  font-style: normal;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+  background-color: #D0A570;
+  overflow-x: hidden;
+}
+
+
+h2 {
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1.16em;
+  font-weight: 700;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  color: #D0A570;
+  margin-bottom: 4rem;
+}
+
+p {
+  display: inline-block;
+  line-height: 1.8em;
+  padding: 0 2em;
+}
+
+
+/* Custom default button */
+.btn-primary {
+  padding: 12px 24px;
+  background: #D0A570;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  border-radius: 100px;
+
+  font-weight: 700;
+  line-height: 1.4em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #000;
+  border: 1px solid #000;
+  color: #D0A570;
+}
+
+
+/* Template */
+.left {
+  background-color: black;
+}
+
+.intro {
+  background-color: #D0A570;
+  padding: 4rem 1.5rem;
+}
+
+.logo {
+  margin: 4rem 0;
+  max-width: 100%;
+}
+
+
+
+/* Responsiveness */
+@media (min-width: 576px) {
+  .intro {
+    padding: 4rem 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .intro {
+    padding: 5rem 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 1920px) {
+
+  .intro {
+    
+  }
+}
+
+@media (min-width: 3500px) {
+
+
+}
