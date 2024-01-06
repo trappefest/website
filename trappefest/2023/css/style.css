@@ -114,7 +114,8 @@ a:focus {
 /* Template */
 .logo {
   margin: 80px 0 48px;
-  max-width: 40%;
+  width: 90%;
+  max-width:780px;
 }
 
 .intro h3 {
@@ -165,7 +166,7 @@ a:focus {
 
 .graphic-left {
   position: absolute;
-  top: 60%;
+  top: 62%;
   right: 0;
   width: 100%;
   height: 520px;
