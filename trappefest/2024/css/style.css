@@ -1,5 +1,18 @@
+/* Colour variables */
+:root {
+  --light-blue: #bce0dc;
+  --dark-blue: #469A90;
+  --purple: #b66ad8
+}
+
+html,
+body {
+  min-height: 100%;
+  height: auto;
+  width: 100%;
+}
+
 html{
-  min-height:100%;/* make sure it is at least as tall as the viewport */
   position:relative;
 }
 
@@ -10,7 +23,7 @@ body {
   font-weight: 300;
   text-align: center;
   color: #000;
-  background: #bce0dc url('../img/tile-wcp.png');
+  background: url('../img/tile-wcp.png');
   overflow-x: hidden;
   height:100%; /* force the BODY element to match the height of the HTML element */
 }
@@ -18,11 +31,56 @@ body {
 /*
 Colours:
 Blue: #bce0dc
-Purple: #b66ad8
+Purple: b66ad8
 Orange: #F87006
 Pink: #FF7597
 */
 
+#cosmicBg {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width:100vw;
+  background: linear-gradient(to bottom, var(--light-blue), var(--dark-blue));
+}
+
+#cosmicRays {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  filter: blur(30px) saturate(1);
+  pointer-events: none;
+  z-index: 1;
+}
+
+#cosmicNoise {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image:
+    url(https://grainy-gradients.vercel.app/noise.svg);
+  filter: contrast(170%) brightness(500%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+#cosmicRays div {
+  height: 600px;
+  width: 600px;
+  background: radial-gradient(circle, var(--purple), var(--light-blue), var(--dark-blue));
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+section {
+  position: relative;
+  z-index: 2;
+}
 
 h2 {
   display: inline-block;
