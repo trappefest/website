@@ -1,9 +1,9 @@
 function startCosmicRays() {
-  var blobCount = 25;
+  var blobCount = 5;
   function randy(min, max) {
     return Math.floor(Math.random() * (1 + max - min) + min);
   }
-  var time = 30,
+  var time = 15,
     tl = new TimelineMax({ repeat: -1, yoyo: false }),
     container = document.getElementById("cosmicRays");
   for (var i = 0; i < blobCount; i++) {
