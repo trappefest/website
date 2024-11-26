@@ -95,6 +95,35 @@ animation: none;
   z-index: 1;
 }
 
+.image-separator {
+  margin:1em 0 2em;
+  text-align: center;
+}
+
+.img-sprite {
+  position: relative;
+  display:block;
+  background-image: url("../img/trappe-sprite.png");
+  margin: 0 auto;
+  z-index: 4;
+}
+  .img-sprite.cloud {
+    width: 115px;
+    height: 70px;
+    background-position: -55px -85px;
+    margin-top: 50px;
+  }
+  .img-sprite.eye-stalk {
+    width: 90px;
+    height: 155px;
+    background-position: -430px -10px;
+  }
+  .img-sprite.mushroom-man {
+    width: 150px;
+    height: 175px;
+    background-position: -170px -70px;
+  }
+
 section {
   position: relative;
   z-index: 2;
@@ -193,7 +222,7 @@ a:focus {
 
 /* Template */
 .logo {
-  margin: 80px 0 48px;
+  margin: 2em 0 48px;
   width: 90%;
   max-width:780px;
 }
@@ -203,7 +232,7 @@ a:focus {
 }
 
 .intro p {
-  margin: 6em 0 2em;
+  margin: 3em 0 2em;
   max-width: 980px;
 }
 
