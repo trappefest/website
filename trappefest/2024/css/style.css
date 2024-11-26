@@ -58,7 +58,7 @@ body {
   left: 0;
   background-image:
     url(https://grainy-gradients.vercel.app/noise.svg);
-  filter: contrast(170%) brightness(500%);
+  filter: contrast(150%) brightness(180%) blur(50%);
   pointer-events: none;
   z-index: 1;
 }
