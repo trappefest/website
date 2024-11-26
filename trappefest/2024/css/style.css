@@ -79,12 +79,11 @@ section {
 
 h2, h3, h4 {
   color: transparent;
-  background-image: linear-gradient(to bottom, var(--pink), var(--orange));
+  background-image: linear-gradient(to bottom, var(--purple), #000 90%);
   background-clip: text;
   font-weight: bold;
   line-height: 1.5em;
   text-transform: uppercase;
-  -webkit-text-stroke: 1px var(--cream);
 }
 
 h2 {
