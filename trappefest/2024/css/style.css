@@ -126,10 +126,21 @@ animation: none;
     background-position: -55px -85px;
     margin-top: 50px;
   }
+  .img-sprite.eye-lock {
+    width: 115px;
+    height: 70px;
+    background-position: -540px -55px;
+    margin-top: 50px;
+  }
   .img-sprite.eye-stalk {
     width: 90px;
     height: 155px;
     background-position: -430px -10px;
+  }
+  .img-sprite.head-key {
+    width: 90px;
+    height: 135px;
+    background-position: -608px -120px;
   }
   .img-sprite.mushroom-man {
     width: 150px;
