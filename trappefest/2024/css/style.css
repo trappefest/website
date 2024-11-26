@@ -105,10 +105,10 @@ animation: none;
     filter: hue-rotate(0deg);
   }
   50% {
-    filter: hue-rotate(360deg);
+    filter: hue-rotate(-140deg);
   }
   0% {
-    filter: hue-rotate(0deg);
+    filter: hue-rotate(20deg);
   }
 }
 
