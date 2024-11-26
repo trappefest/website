@@ -7,6 +7,8 @@
   --orange: #F87006;
   --cream: #ffeed2;
   --pink: #FF7597;
+  --link-purple: #604CFF;
+  --link-pink: #E12D99;
 }
 
 html,
@@ -212,13 +214,14 @@ sup {
 
 a,
 a:visited {
-  color: #5787E3;
+  color: var(--link-purple);
+  display: inline-block;
   letter-spacing: 0.075em;
 }
 
 a:hover,
 a:focus {
-  color: #e194c2;
+  color: var(--link-pink);
   text-decoration: none;
 }
 
