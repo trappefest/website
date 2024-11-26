@@ -1,9 +1,15 @@
 function startCosmicRays() {
+  // only run cosmic rays if url has cosmicRays=on
+  if (window.location.href.indexOf("cosmicRays=on") === -1) {
+    return;
+  }
+
+  document.querySelector("body").classList.add("cosmicRays");
   var blobCount = 5;
   function randy(min, max) {
     return Math.floor(Math.random() * (1 + max - min) + min);
   }
-  var time = 35,
+  var time = 60,
     tl = new TimelineMax({ repeat: -1, yoyo: false }),
     container = document.getElementById("cosmicRays");
   for (var i = 0; i < blobCount; i++) {

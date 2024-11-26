@@ -12,6 +12,7 @@
   <script src="js/jquery.js"></script>
   <script src="js/jquerymobile.js"></script>
   <script src="js/galleria/galleria.min.js"></script>
+  <script src="js/cosmicrays.js"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&display=swap');
 
@@ -76,15 +77,7 @@
 <div id="cosmicRays"></div>
 <div id="cosmicNoise"></div>
 <div id="cosmicBg"></div>
-
-<svg id="filter">
-  <filter id="noise">
-    <feTurbulence baseFrequency="0.60" xresult="colorNoise" />
-    <feColorMatrix in="colorNoise" type="matrix" values=".33 .33 .33 0 0 .33 .33 .33 0 0 .33 .33 .33 0 0 0 0 0 1 0" />
-    <feComposite operator="in" in2="SourceGraphic" result="monoNoise" />
-    <feBlend in="SourceGraphic" in2="monoNoise" mode="multiply" />
-  </filter>
-</svg>
+  
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
