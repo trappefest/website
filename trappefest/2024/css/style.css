@@ -2,8 +2,9 @@
 :root {
   --light-blue: #bce0dc;
   --dark-blue: #469A90;
+  --blue-black: #2D5F59;
   --purple: #b66ad8;
-  --dark-purple: #6376AB;
+  --dark-purple: #722C92;
   --orange: #F87006;
   --cream: #ffeed2;
   --pink: #FF7597;
@@ -26,7 +27,7 @@ body {
   font-family: 'din', Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-align: center;
   color: #000;
   background: url('../img/tile-wcp.png');
@@ -156,9 +157,11 @@ section {
 }
 
 h2, h3, h4 {
-  color: transparent;
-  background-image: linear-gradient(to bottom, var(--purple), #000 90%);
-  background-clip: text;
+  color: var(--dark-purple);
+  text-shadow: var(--cream) 1px 0px 2px,
+               var(--cream) -1px 0px 2px,
+                var(--cream) 0px -1px 3px,
+                var(--cream) 0px 1px 3px;
   font-weight: bold;
   line-height: 1.5em;
   text-transform: uppercase;
