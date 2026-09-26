@@ -1,6 +1,6 @@
 /* Trappefest VII — night / day with torch hero */
 :root { --x: -999; --y: -999; --r: 200; --h: 0.55; }
-@media (max-width: 720px) { :root { --r: 133; } }
+@media (max-width: 720px) { :root { --r: 100; } }
 
 html.theme-night, .layer-night {
   --paper: #0b1524; --panel: #13233a; --bar: #24435a;
